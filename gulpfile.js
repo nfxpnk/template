@@ -18,5 +18,5 @@ gulp.task('scss-lint', function() {
 gulp.task('sass:watch', function () {
 	livereload.listen();
 	gulp.watch(['scss/styles.scss'], ['sass', 'scss-lint']);
-	gulp.watch('index.html', livereload.reload('index.html'));
+	gulp.watch('index.html', livereload.reload);
 });
