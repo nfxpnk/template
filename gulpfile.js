@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 gulp.task('sass', function () {
 	return gulp.src('scss/styles.scss')
 		.pipe(sass().on('error', sass.logError))
-		.pipe(gulp.dest('/css'))
+		.pipe(gulp.dest('./css'))
 		.pipe(livereload());
 });
 
@@ -18,5 +18,5 @@ gulp.task('scss-lint', function() {
 gulp.task('sass:watch', function () {
 	livereload.listen();
 	gulp.watch(['scss/styles.scss'], ['sass', 'scss-lint']);
-	gulp.watch('index.html', livereload.reload);
+	gulp.watch('index.html', livereload.reload('index.html'));
 });
