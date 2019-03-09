@@ -1,18 +1,26 @@
 {
   "name": "html",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
-    "gulp": "^3.9.1",
-    "gulp-livereload": "^3.8.1",
-    "gulp-sass": "^3.1.0",
-    "gulp-scss-lint": "^0.4.0"
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-scss-lint": "^1.0.0",
+    "gulp-livereload": "^4.0.1"
   },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfxpnk/template.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nfxpnk/template/issues"
+  },
+  "homepage": "https://github.com/nfxpnk/template#readme"
 }
