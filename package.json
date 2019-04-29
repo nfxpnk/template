@@ -1,19 +1,26 @@
 {
-  "name": "content",
-  "version": "1.0.0",
-  "main": "server.js",
+  "name": "html",
+  "version": "1.0.1",
+  "description": "",
+  "main": "gulpfile.js",
   "dependencies": {
-    "ejs": "^2.6.1",
-    "express": "^4.16.4",
-    "livereload": "^0.7.0",
-    "node-sass": "^4.12.0"
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-scss-lint": "^1.0.0",
+    "gulp-livereload": "^4.0.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nfxpnk/template.git"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "bugs": {
+    "url": "https://github.com/nfxpnk/template/issues"
+  },
+  "homepage": "https://github.com/nfxpnk/template#readme"
 }
