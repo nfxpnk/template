@@ -1,6 +1,5 @@
 const gulp = require('gulp'),
 	sass = require('gulp-sass'),
-	scsslint = require('gulp-scss-lint'),
 	livereload = require('gulp-livereload');
 
 function compileSass() {
@@ -12,17 +11,16 @@ function compileSass() {
 }
 
 function sassLint() {
-	return gulp.src('scss/styles.scss').pipe(scsslint());
+	return false;
 }
 
 function watchSass() {
 	livereload.listen();
-	gulp.watch(['scss/styles.scss'], gulp.series(compileSass, sassLint));
+	gulp.watch(['scss/styles.scss'], gulp.series(compileSass));
 	gulp.watch(['index.html']).on('change', function() {
 		livereload.reload();
 	});
 }
 
 gulp.task('sass', gulp.series(compileSass));
-gulp.task('scss:lint', gulp.series(sassLint));
 gulp.task('default', gulp.series(watchSass));
